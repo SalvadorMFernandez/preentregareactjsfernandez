@@ -6,7 +6,7 @@ const App = () => {
   return (
     <>
     <NavBar></NavBar>
-    <ItemListContainer greeting="prendas"></ItemListContainer>
+    <ItemListContainer greeting="Prendas"></ItemListContainer>
     </>
   )
 }
