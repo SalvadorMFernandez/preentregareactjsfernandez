@@ -1,8 +1,13 @@
 import React from 'react'
+import NavBar from './componentes/NavBar/NavBar'
+import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
 
 const App = () => {
   return (
-    <div>App</div>
+    <>
+    <NavBar></NavBar>
+    <ItemListContainer greeting="Prendas"></ItemListContainer>
+    </>
   )
 }
 
