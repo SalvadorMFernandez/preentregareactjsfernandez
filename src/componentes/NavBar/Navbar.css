@@ -1,11 +1,73 @@
+/* NavBar.css */
+
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid black;
-}
-li {
-    display: inline-block;
-    margin: 10px;
-    
-}
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logoKlp {
+    height: 50px;
+    object-fit: contain;
+  }
+  
+  nav {
+    flex-grow: 1;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 15px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative;
+  }
+  
+  nav li:hover {
+    color: #e74c3c; /* Color de resaltado */
+    transform: scale(1.1);
+  }
+  
+  nav li.active {
+    color: #e74c3c; /* Color para el elemento activo */
+    font-weight: bold;
+  }
+  
+  nav li::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background: #e74c3c;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+  }
+  
+  nav li:hover::after,
+  nav li.active::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .CartWidget {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  

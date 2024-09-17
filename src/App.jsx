@@ -1,14 +1,19 @@
-import React from 'react'
-import NavBar from './componentes/NavBar/NavBar'
+import React from 'react';
+import NavBar from './componentes/NavBar/NavBar';
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
+import Articulos from './componentes/Articulos/Productos';
+
+
 
 const App = () => {
   return (
     <>
-    <NavBar></NavBar>
-    <ItemListContainer greeting="Prendas"></ItemListContainer>
+      <NavBar />
+      <ItemListContainer greeting="Prendas" />
+      <Articulos></Articulos>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
+
